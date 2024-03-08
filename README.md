@@ -37,7 +37,7 @@ Let's know about how each part acts as....
 **Run The Code :**
 
 - To Run this code first we have to install **Tkinter** which is usually comes with python also install openai.
-- We have to set an OpenAI API key and replace ' **' '** ' with the key.
+- We have to set an OpenAI API key and replace **' '** with the key.
 - After running the code we will get an output window for the User and Bot interaction.<br>
 
 **GUI based Output Window :**
