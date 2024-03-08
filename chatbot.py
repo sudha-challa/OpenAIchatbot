@@ -12,7 +12,7 @@ class ChatApplication(tk.Tk):
     
     def initialize_openai(self):
         # It's better to store API keys in environment variables or config files
-        openai.api_key = ' '
+        openai.api_key = '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'
     
     base_messages = [
         {"role": "system", "content": "You are a helpful assistant."},
@@ -20,7 +20,7 @@ class ChatApplication(tk.Tk):
     ]
     
     def create_widgets(self):
-        self.conversation = tk.Text(self, bg="dark blue", fg="white", font="Arial,14")
+        self.conversation = tk.Text(self, bg="navyblue", fg="white", font="Arial,14", wrap="word")
         scrollbar = tk.Scrollbar(self, command=self.conversation.yview)
         self.entry_field = tk.Entry(self, font="Arial,14", bg="lightblue", fg="black")
         self.entry_field.insert(0, 'Ask a question...')
@@ -51,8 +51,8 @@ class ChatApplication(tk.Tk):
         user_input = self.entry_field.get().strip()
         if user_input and user_input != 'Ask a question...':
             response = self.get_response(user_input)
-            self.conversation.insert(tk.END, f'Me: {user_input}\n')
-            self.conversation.insert(tk.END, f'Bot: {response}\n')
+            self.conversation.insert(tk.END, f'\n Me: { user_input }\n')
+            self.conversation.insert(tk.END, f'\n Bot: { response}\n')
             self.entry_field.delete(0, tk.END)
             self.conversation.see(tk.END)
 
