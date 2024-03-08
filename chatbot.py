@@ -12,7 +12,7 @@ class ChatApplication(tk.Tk):
     
     def initialize_openai(self):
         # It's better to store API keys in environment variables or config files
-        openai.api_key = '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'
+        openai.api_key = ' '
     
     base_messages = [
         {"role": "system", "content": "You are a helpful assistant."},

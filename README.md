@@ -1,7 +1,7 @@
 
 <h1>OpenAI API ChatBot</h1>
 
-This is the code for basic implementation of a chatbot using Tkinter and the OpenAI  **Generative Pre-Trained Transformer** model.Here I have explained the code in detail by dividing into parts. 
+This is the code for basic implementation of a chatbot using Tkinter and the OpenAI  **Generative Pre-Trained Transformer** model.Here I have explained the code in detail by dividing into parts. <br>
 
 Let's know about how each part acts as....
 
@@ -34,7 +34,13 @@ Let's know about how each part acts as....
 **7.if __ name __ == "__ main __": block** :
 - Instantiates the ChatApplication class and starts the main event loop.<br>
 
-**Output**:
+**Run The Code :**
+
+- To Run this code first we have to install **Tkinter** which is usually comes with python also install openai.
+- We have to set an OpenAI API key and replace ' **' '** ' with the key.
+- After running the code we will get an output window for the User and Bot interaction.<br>
+
+**GUI based Output Window :**
 <figure>
     <img src=chatbot.png>
     <figcaption>This is the output window of the ChatBot</figcaption>
